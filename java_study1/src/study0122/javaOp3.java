@@ -59,7 +59,11 @@ public class javaOp3 {
 		int age = 0;
 		System.out.println("나이:");
 		age = scan.nextInt();
-		System.out.println(age < 13 || age > 19);
+		System.out.println(!(age < 13 || age > 19));
+		
+		// 조건식 - 비교연산자와 논리연산자를 사용하여 만든식
+		// 조건식 만드는 연습 하셔야 해요.
+		// total > count
 		
 
 	}
