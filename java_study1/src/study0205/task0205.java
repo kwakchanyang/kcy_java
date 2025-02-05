@@ -35,14 +35,14 @@ public class task0205 {
 			else
 				System.out.println("다운");
 			}
-			if(num<=30)
-			
-			int com = (int)(Math.random()*11+20); //30~20
-			
-			int com = (int)(Math.random()*11+10); //20~10
-			
-			int com = (int)(Math.random()*11+1); //1~10
-			
+//			if(num<=30)
+//			
+////			int com = (int)(Math.random()*11+20); //30~20
+////			
+////			int com = (int)(Math.random()*11+10); //20~10
+////			
+////			int com = (int)(Math.random()*11+1); //1~10
+////			
 	
 //			if(com==num) {
 //				System.out.println("정답!");
