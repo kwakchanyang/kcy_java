@@ -106,20 +106,25 @@ public class JavaTest2 {
 		 * 
 		 * 
 		 * 
-		 * 
+		 *  
 		 */
 		
 //		
-//		Scanner sc = new Scanner(System.in);
-//		
-//		System.out.println("알파벳을 입력하세요.");
-//		
-//		String alpa= sc.next();
-//		
-//		int d= (int)alpa;
-//		
-//		String num="";
-//		for(char alpa = 'a'; alpa<='z'; alpa++) {
+		
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("알파벳 입력:");
+		char alp=sc.nextLine().charAt(0);
+		// 아스키 코드에서 A - 65(10진수), a - 97(10진수)  97-65=32의 차이가 있음. A+32=97(a)가됨.
+		
+		for(int i =1;i<=26;i++) { // 알파벳의 개수는 26개
+			if(alp==(i+64) || alp==(i+96)) { // 소문자,대문자둘다 순서 같게 해줌 t=20이 나오고 T도20이 나오도록
+				System.out.printf("알파벳 %c 는 %d번째 알파벳\n",alp,i);
+			}
+		}
+		
+		
+		
 			
 				
 //			}
@@ -150,17 +155,7 @@ public class JavaTest2 {
 		 */
 		
 		
-		Scanner sc = new Scanner(System.in);
-		char user=sc.next();
-		
-		for(char ch = 'a'; ch<='z'; ch++) {
-			if(ch==user)
-			System.out.print(ch - 'a' + " ");
-		}
-		
-		for(char ch = 'A'; ch<='Z'; ch++) {
-			System.out.print(ch - 'A' + " ");
-		}
+
 		
 		
 		
