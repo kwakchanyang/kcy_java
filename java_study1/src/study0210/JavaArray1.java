@@ -39,7 +39,21 @@ public class JavaArray1 {
 		}
 		
 		int[] apple = new int[10]; // new가 사용된건 참조변수 = 메모리주소를 전달하는것임
-		//  참조변수(뒤에 new붙어있음)를 사용하려면 배열인경우 인덱스를 객체인경우는 .접근연산자를
+		//  참조변수(뒤에 new붙어있음)를 사용하려면 배열인경우 인덱스를 객체인경우는 .접근연산자를//		int[]a=new int[] {11,20,55};
+//		int[]b=new int[] {13,20,55};
+//		
+//		boolean isSame = true; // 같은배열이면 true 다르면 false >> 내가 정해줘야함.
+//		
+//		for(int i=0;i<a.length;i++) {
+//			if(a[i] != b[i])  // 반복문이라 else를 쓰지 않음. 
+//				isSame=false;
+//			}
+//			if(isSame) {
+//				System.out.println("같은 배열");
+//			}else {
+//				System.out.println("다른 배열");
+//			}
+//		
 //		long naa=100; // 참조변수가 아님. 참조변수들은 직접데이터를 가지고 있지않고 주소만 참조하고 있는 상태임.
 //		Scanner[] ab = new Scanner[50]; // 50개를 입력받을수 있음.
 //		ab[0];
