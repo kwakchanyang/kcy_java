@@ -25,7 +25,8 @@ public class JavaArray1 {
 		arr[0]=10;
 		arr[1]=30;
 		arr[2]=40;
-		arr[4]=60; // int type의 크기만큼 4번이동 > 5번째가 됨.0부터 시작하는 이유는 arr가 알고 있는 주소 위치가
+		arr[4]=60; // int type의 크기만큼 4번이동 > 5번째가 됨.
+		//0부터 시작하는 이유는 arr가 알고 있는 주소 위치가
 		// 첫번째니까 0번이동임.
 		
 		
@@ -38,8 +39,10 @@ public class JavaArray1 {
 			System.out.println(arr2[i]);
 		}
 		
-		int[] apple = new int[10]; // new가 사용된건 참조변수 = 메모리주소를 전달하는것임
-		//  참조변수(뒤에 new붙어있음)를 사용하려면 배열인경우 인덱스를 객체인경우는 .접근연산자를//		int[]a=new int[] {11,20,55};
+		int[] apple = new int[10]; 
+		// new가 사용된건 참조변수 = 메모리주소를 전달하는것임
+		//  참조변수(뒤에 new붙어있음)를 사용하려면 배열인경우 인덱스를 객체인경우는 .접근연산자를
+		//	int[]a=new int[] {11,20,55};
 //		int[]b=new int[] {13,20,55};
 //		
 //		boolean isSame = true; // 같은배열이면 true 다르면 false >> 내가 정해줘야함.
