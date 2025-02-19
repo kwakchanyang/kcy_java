@@ -1,5 +1,7 @@
 package newStudy0218;
 
+import study0218.Movie;
+
 public class ClassArray {
 
 	public static void main(String[] args) {
@@ -39,8 +41,17 @@ public class ClassArray {
 		
 //		int[] a = new int[] {1,2,3,4,5};이것처럼
 		
-		Member info = new Member();
+//		Member info = new Member();
+		
+
+		
+		
 	
 	}
 
 }
+
+
+
+
+
