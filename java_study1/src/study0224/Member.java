@@ -48,7 +48,7 @@ public class Member {
 		this.name=name;
 		output(); // 클래스 메서드 호출 가능
 	}
-	// 클래스 메서드
+	// 클래스 메서드(앞에 static붙음)
 	static void output() {
 		/* 실행 > 클래스정의 > 메모리로드> 클래스 생성,변수,메서드 output > main() > 생성자 > name,age,setName
 		setName이 생성되기도전에 output에서 사용하려해서 오류뜸
