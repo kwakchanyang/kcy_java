@@ -3,18 +3,30 @@ package inherit1;
 public class JavaInherit1 {
 
 	public static void main(String[] args) {
-		
-		TV tv = new TV();
-//		tv.onOff=true; // 전원 on
-		
-		Computer com = new Computer();
+		// main > TV()호출 > Product() > product끝나고 tv끝나고 지워짐 > tv초기화(a=10,b=20)전 product가 먼저 실행
+//		tv에 product가 생성되는거라 tv가 상속되면(확장) > 이때 product가 초기화되고 //호출된건 자식먼저지만 공간자체의 초기화순서는 부모먼저임(바꿀수없음)
+//		tv안의 부모(super)가 제일위에 있어야함 > 부모가 먼저 초기화해야함. > 그후에 a=10,b=20으로 tv가 초기화
+//		TV tv = new TV();
+////		tv.onOff=true; // 전원 on
+//		
+//		tv.power(); // 전원 on true
+//		tv.power(); // 전원 off false
+//		tv.brand="삼성";
+//		tv.price = 1200000;
+//		tv.name="OLED";
+//		
+//		Computer com = new Computer();
 //		com.onOff=true; // 전원 on
 		
-		tv.power(); // 전원 on true
-		tv.power(); // 전원 off false
-		tv.brand="삼성";
-		tv.price = 1200000;
-		tv.name="OLED";
+		TV tv = new TV("삼성",950000,"st60");
+		Aircon air = new Aircon("캐리어",542000,"ca18t");
+		Computer com = new Computer("삼성",173000,"매직스테이션10");
+		
+		tv.power();
+		air.power();
+		com.power();
+		
+//		Product p = new Product();
 	}
 
 }
