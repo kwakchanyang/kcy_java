@@ -3,7 +3,7 @@ package inner1;
 public class Test {
 	
 	static int count=1; // 클래스변수(정적변수) >> 얘가 가장먼저 생김 . 클래스가 메모리에 로딩될때 
-	int age; // 인스턴스변수 >> 클래스에 객체가 생성되고 나서사용가능 
+	int age; // 인스턴스변수 >> Test라는 클래스에 객체가 생성되고 나서사용가능 
 	A a;
 	static Dog d;
 	
@@ -19,7 +19,7 @@ public class Test {
 	static class Dog{
 		int year;		
 	}
-	void setYear(int year) {
+	void setYear(int year) { // 인스턴스 메서드
 		d = new Dog();
 		d.year=year;
 	}
@@ -47,6 +47,14 @@ public class Test {
 // 내부클래스 - 클래스 내부에 만드는 클래스
 // 내부클래스는 여러개의 클래스와 관계를 맺는게 아니라 하나의 클래스와
 // 상속 또는 포함관계를 맺을 경우에 사용하면 효과적이다.
+
+
+// 인스턴스 내부 클래스 - 외부 클래스 객체를 생성하고 사용
+// 정적 내부클래스 (static) - 외부 클래스 객체 없이 사용가능
+//			외부클래스의 static 메서드를 이용해서 객체생성 및 사용권장
+// 지역 내부 클래스 - 메서드 내부에 클래스를 정의하고 해당 메서드 내부에서만 사용가능
+//
+// 익명 내부 클래스 - 이름 없는 클래스, 메서드를 오버라이딩하여 사용
 
 
 /*
