@@ -23,7 +23,7 @@ public class MainMt {
 //		
 //		System.out.println(a.get(11));
 
-		
+//		┌제네릭사용하도록된 클래스이지만 <>타입지정안해서 Object타입임 >> 꼭 타입적어야함
 		ArrayList list = new ArrayList();
 		list.add(100);
 		list.add(2311);
@@ -41,6 +41,24 @@ public class MainMt {
 		list.remove("포카칩"); // 삭제할 데이터 입력하여 삭제
 		System.out.println(list);
 		
+		for(int i=0; i<list.size();i++) {
+			System.out.println(list.get(i));
+		}
+		
+		for(Object o : list) {
+			System.out.println(o);
+		}
+//		list.add는 배열의 마지막에 추가
+		list.add(1,"내가 원하는곳"); // 내가원하는 인덱스위치에 추가됨
+//		add는 오버로딩된것임 > 마지막에 추가되는경우는 매개변수1개, 원하는위치에 추가되는 add는 매개변수2개
+//		remove도 오버로딩 : 정수넣어 삭제, 문자열넣어삭제
+		System.out.println(list);
+		System.out.println(list.contains("장미란"));
+		
+//		int[] a = new int[3];의 방식으로 위에 처럼하려면 다 코드짜줘야함 > 메소드가 없어서 > array쓰자!
+		
+		list.clear(); // 배열모두 삭제
+		System.out.println(list);
 	}
 
 }
