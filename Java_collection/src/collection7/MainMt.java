@@ -58,14 +58,14 @@ public class MainMt {
 		
 //		cmd.get("게시판").board클래스 메서드 실행();
 //		cmd.get("게시판").save();등등 필요한메서드 만들어서 사용
-		cmd.get("게시판").save();
-		cmd.get("회원가입").save();
-		cmd.get("게임").save();
-		
-		String command = "게시판"; // 여기만 변경하면 가능
-		
-		Active action = cmd.get(command);
-		action.save();
+//		cmd.get("게시판").save();
+//		cmd.get("회원가입").save();
+//		cmd.get("게임").save();
+//		
+//		String command = "게시판"; // 여기만 변경하면 가능
+//		
+//		Active action = cmd.get(command);
+//		action.save();
 		
 		
 		
