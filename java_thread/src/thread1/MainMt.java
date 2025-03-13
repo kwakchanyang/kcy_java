@@ -23,6 +23,7 @@ public class MainMt {
 //			}
 //		}
 		
+		
 		Dino[] 알 = new Dino[] {
 				
 				new Dino("티라노사우르스", 10),
@@ -32,21 +33,33 @@ public class MainMt {
 				
 		};
 		
-		Create device1 = new Create();
-		device1.start();
+		Create[] device = new Create[알.length];
+		for(int i=0; i<알.length;i++) 
+			device[i] = new Create();
+		
+		device[0].start(); device[1].start();
+		device[2].start(); device[3].start();
+//		알 갯수 만큼 스레드 만들었다 -> why? 알 최대치만큼 스레드있으면 좋을꺼같다는 개인적인 생각
+		
 		// 부화시킬 공룡 선택하여 부화진행할것이다.
 		// 스레드를 통해 각 공룡별 시간만큼 동작하도록 할것이다.
 		Scanner sc = new Scanner(System.in);
 		
 		for(int i=0; i<알.length;i++) {
 //			egg가 값이 있으면 = 부화/ 값이없다면 = 부화xx
-			System.out.print("1~4중 하나: ");
+			System.out.print("1~4중 알 하나 선택 : ");
 			int select = sc.nextInt(); // run실행중에는 값을 넣어줄수없지만 egg클래스변수(static)통해 전달(인스턴스변수는안됨)
 			
 			Create.hatch(알[select-1]);// hatch라는 메서드통해 공룡알을 Create라는 클래스의 egg에 전달해줌
+			System.out.println((i+1)+"번 부화장치 가동");
+			
+			System.out.print("계속 할꺼야?(1-계속) : ");
+			if(sc.nextInt()!=1)
+				break; // 1을 입력해야 계속할수있다.
 			
 		} // 얘는 4번반복이지만 두번째 스레드는 계속 살아있음.
 
+//		티라노 객체를 받고 run안의 지역변수에게 넣어주기 > egg를 null로 바꿔도 지역변수에 담겼으니 티라노는 아직 살아있음 > 
 	}
 
 }
@@ -81,6 +94,7 @@ public class MainMt {
 	2. runnable 상태 (실행준비)
 	3. running 상태 (실행)
 		- wait, sleep, suspend에 걸리면 
+		-> 대기 상태
 		-> 대기 상태에서 resume, notify, sleep time up에 의해
 		-> 실행 준비 상태로 변경
 	4. terminated 상태 (소멸)
