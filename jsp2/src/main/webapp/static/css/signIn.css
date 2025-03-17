@@ -1,0 +1,48 @@
+@charset "UTF-8";
+/* signIn.css */
+
+#main{
+	width:100%;
+	padding:100px 0;
+	text-align:center;
+}
+#formWrap{
+	width:400px;
+	margin:0 auto;
+}
+#formWrap .input-field{
+	width:100%;
+	display:flex;
+	align-items:center;
+	margin-bottom:10px;
+}
+#formWrap .input-field label{
+	width:150px;
+	font-size:25px;
+	padding-right:30px;
+}
+#formWrap .input-field input{
+	width:250px;
+	font-size:25px;
+	padding:5px 10px;
+}
+.love-word{
+	padding:25px 0;
+	font-style:italic;
+}
+
+.signIn-bt{
+	display:block;
+	width:100%;
+	padding:15px 0;
+	text-align:center;
+	background:pink;
+	font-weight:800;
+	color:red;
+	border:0;
+	border-radius:10px;
+	font-size:25px;
+	text-shadow: 5px 5px 5px #eee;
+	
+	
+}

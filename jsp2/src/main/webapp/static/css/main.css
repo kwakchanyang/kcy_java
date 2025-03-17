@@ -1,0 +1,37 @@
+@charset "UTF-8";
+/* main.css */
+
+#main{
+	width:100%;
+}
+#slide-wrap{
+	width:100%;
+	position:relative;
+}
+#slide-wrap .arrow{
+	position:absolute;
+	left:0; top:0;
+	width:100%;
+	height:100%;
+}
+#slide-wrap .arrow .arrow-left{
+	position:absolute;
+	left:20px;
+	top:50%;
+	transform:translate(0, -50%); /* translateY() Y값만 줄때*/
+}
+#slide-wrap .arrow .arrow-left i { font-size:40px;}
+#slide-wrap .arrow .arrow-right i { font-size:40px;}
+
+#slide-wrap .arrow .arrow-right{
+	position:absolute;
+	right:20px;
+	top:50%;
+	transform:translate(0,-50%);
+}
+
+#content-wrap{
+	display:flex;
+	flex-wrap:wrap; /* 기본 한줄이라 여러줄하려면 wrap을 해줘야함*/
+}
+#content-wrap img{ flex:1;} /* 너비값줘버리면 정확히 계산해야 함 > flex:1은 크기가 1:1:1로 알아서 들어가게*/

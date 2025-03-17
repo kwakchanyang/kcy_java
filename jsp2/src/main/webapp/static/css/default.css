@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+/* dafault.css */
+
+*{
+	margin:0;
+	padding:0; 
+	box-sizing: border-box;
+}
+
+ul { list-style-type:none; }
+a{text-decoration:none; color:inherit; }
+
+img { width:100%; } 
+
+#wrap{
+	width:1000px;
+	margin:0 auto;
+	position:relative;
+}
+
+/* header 부분의 스타일 */
+#header{
+	width:100%;
+	padding:10px 0;
+	margin-bottom:100px;
+}
+#nav{
+	width:100%;
+	display:flex;
+	align-items:center;
+}
+#nav .top{
+	display:flex;
+	align-items:center;
+}
+#nav .left{
+	width:80%;
+	justify-content: space-between; 
+}
+#nav .right{
+	width:20%;
+	padding:30px;
+}
+
+#nav .left .menu-list{ 
+	width:100%; display:flex;
+	align-items:center;
+	}
+#nav .left .menu-list .menu{
+	width:20%;	text-align:center;
+	padding:15px 0;
+}
+#nav .left .menu-list .menu:hover{
+	color:#fff;
+	background:#555;
+}
+#nav .right .login-wrap{ width:100%;}
+#nav .right .login-wrap .login-bt{ 
+	display:block;
+	padding:15px 0;
+	background: #ff80c0;
+	text-align:center;
+	color:white;
+	border-radius:7px;
+}
+
+
+/* footer 부분의 스타일 */
+#foot{
+	width:100%;
+	padding:50px 80px;
+	border-top:3px solid #ccc;
+	margin-top:50px;
+}
+#foot .address b:nth-child(2){
+	margin:0 20px;
+}
+#foot .logo{
+	width:200px;
+}
+
+
+
+
+
+
+
