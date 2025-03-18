@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+#main{
+	width:100%;
+	padding:50px 0;	
+}
+
+#formData{
+	width:400px;
+	margin:0 auto;
+}
+#formData .inputField{
+	width:100%;
+	margin-bottom:40px;
+	position:relative;
+    text-align: center;
+}
+#formData .inputField input{
+	outline: none;
+	border:0;
+	font-size:25px;
+	padding:10px 15px;
+	border-bottom:2px solid #ddd;
+	width:100%;
+    box-sizing: border-box;
+}
+#formData .inputField label{
+	position:absolute;
+	left:17px; top:14px;  font-size:19px;
+	color:#999;
+	transition:all 1s;
+	
+}
+#formData .inputField .focus{
+	top:-17px; color:#555;
+	font-size:13x;
+}
+
+
+#formData .inputField select{
+	border:0;
+	border-bottom:2px solid #ddd;
+	width:100px;
+    font-size:20px;
+    text-align: center;
+}
+#formData .inputField select + label{
+	position:static; color: black;
+}
+#formData .inputField .active{
+	border-color: black;
+	background:#D4F4FA;
+}
+#joinBt{
+	border:0;
+	background:pink;
+	color:#6a0dad;
+	width:100%;
+	padding:10px 0;
+	font-size:23px;
+	font-weight:700;
+	border-radius:10px;
+	margin:0 auto;
+	display:block;
+}

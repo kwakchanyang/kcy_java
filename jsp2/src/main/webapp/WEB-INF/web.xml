@@ -9,4 +9,14 @@
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>Main</display-name>
+    <servlet-name>Main</servlet-name>
+    <servlet-class>control.Main</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Main</servlet-name>
+    <url-pattern>/signin</url-pattern> 
+  </servlet-mapping>
 </web-app>

@@ -2,24 +2,25 @@
 /* signIn.css */
 
 #main{
-	width:100%;
-	padding:100px 0;
-	text-align:center;
+	width:100%; /* 요소의 너비를 화면 전체로 설정*/
+	padding:100px 0;/* 위아래100px 좌우 0px*/
+	text-align:center;/* 가운데 정렬*/
+
 }
-#formWrap{
-	width:400px;
-	margin:0 auto;
+#formWrap{ /* 폼을 감싸는 컨테이너 역할*/
+	width:400px; 
+	margin:0 auto;/* 좌우 여백을 자동으로 설정 > 가운데 정렬*/
 }
-#formWrap .input-field{
-	width:100%;
-	display:flex;
-	align-items:center;
-	margin-bottom:10px;
+#formWrap .input-field{ /* 입력 필드 컨테이너*/
+	width:100%; /* input-field의 너비를 부모요소인 formWrap에 맞춤 */
+	display:flex; /* 플렉스박스를 사용해 내부요소들을 가로로 나란히 배치*/
+	align-items:center;/*입력필드와 레이블을 수직으로 가운데정렬*/
+	margin-bottom:10px; /*이름필드와 이메일필드 사이 간격*/
 }
 #formWrap .input-field label{
 	width:150px;
 	font-size:25px;
-	padding-right:30px;
+	padding-right:30px; /* 아이디,비밀번호 글씨와 필드들과의 간격*/
 }
 #formWrap .input-field input{
 	width:250px;
@@ -45,4 +46,18 @@
 	text-shadow: 5px 5px 5px #eee;
 	
 	
+}
+
+#forgetAndJoin{
+	padding:15px 0;
+	display:flex;
+	justify-content:space-between;
+	width:400px;
+	margin:0 auto;
+}
+
+#forgetAndJoin + p{
+	margin-top:30px;
+	font-style:italic;
+	font-weight:800;
 }

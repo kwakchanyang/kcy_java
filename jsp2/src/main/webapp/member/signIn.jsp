@@ -27,7 +27,8 @@
 		</p>
 		
 		<div id="formWrap">
-			<form id="fm" name="fm" role="form" method="post" action="./signInCheck.jsp">
+			<form id="fm" name="fm" role="form" method="post" action="signin"><!-- post방식이라 doPost실행됨 -->
+			<!-- 같은주소(signin)이지만 요청방식에 따라 다른페이지 나오게 get:로그인페이지 제공/post:로그인 처리동작 > HOME페이지 제공-->
 				<div class="input-field">
 					<label for="userId">아이디</label>
 					<input type="text" name="userId" id="userId" >
