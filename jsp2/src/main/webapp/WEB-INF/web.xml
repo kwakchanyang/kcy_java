@@ -17,6 +17,16 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>Main</servlet-name>
-    <url-pattern>/signin</url-pattern> 
+    <url-pattern>/signin</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>BoardController</display-name>
+    <servlet-name>BoardController</servlet-name>
+    <servlet-class>control.BoardController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BoardController</servlet-name>
+    <url-pattern>/board/*</url-pattern> <!-- *.do 또는 /board/*(아무거나입력,그냥/board도 가능) 로 끝나낸애들은 모두 BoardController 서블렛이 받아주겠다.  --> 
   </servlet-mapping>
 </web-app>

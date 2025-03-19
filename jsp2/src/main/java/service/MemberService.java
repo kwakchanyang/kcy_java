@@ -14,6 +14,7 @@ public class MemberService {
 		
 		if( dao.loginCheck(email, pass)) {
 			request.getSession().setAttribute("user", email);
+			//Session: 접속한 사용자에게 연결되었다는 값을 준다 > 연결 유지 > 값을 잃으면 연결끊김 > 새로운세션되면 user값 잃음
 		}
 	}
 	

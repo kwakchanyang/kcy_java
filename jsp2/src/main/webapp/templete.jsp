@@ -13,9 +13,12 @@
 <link rel="stylesheet" href="http://localhost:8080/jsp2/static/css/default.css">
 </head>
 <body> 
-	<%@ include file="../header.jsp" %>
-	<!-- 추가할것 여기에 추가하면 됨 -->
 	
-	<%@ include file="../footer.jsp" %>
+	<div id="wrap">
+		<%@ include file="../header.jsp" %>
+		<!-- 추가할것 여기에 추가하면 됨 -->
+		
+		<%@ include file="../footer.jsp" %>
+	</div>
 </body>
 </html>
